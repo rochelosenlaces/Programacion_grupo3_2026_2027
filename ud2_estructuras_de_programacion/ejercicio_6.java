@@ -1,19 +1,24 @@
-package ud2_conversiones_tipos;
+package ud2_estructuras_de_programacion;
+import java.util.Scanner;
 
 public class ejercicio_6 {
 
 	public static void main(String[] args) {
-		int a, b, num_ent;
-		double num_real;
+		Scanner scanner = new Scanner(System.in);
+		int numero;
+		String result;
 		
-		a = 7;
-		b = 2;
-		num_ent = a / b;
-		num_real = (double)a  / b;
+		result = "";
+		System.out.print("Dame un numero: ");	
+		numero = scanner.nextInt();
+		while(numero >=10) {
+			result = result + " " + (numero%10);
+			numero = numero / 10;
+		}
+		result = result + " " + numero;
+		System.out.print(result);
 		
-		System.out.println("Numero entero: " + num_ent);
-		System.out.print("Numero real: " + num_real);
-		
+		scanner.close();
 	}
 
 }
