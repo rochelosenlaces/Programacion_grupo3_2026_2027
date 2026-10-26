@@ -26,5 +26,6 @@ public class Ejercicio_7 {
 		}while(numero != 0);
 		System.out.println("Suma pares: " + cont_par);
 		System.out.println("Suma impares: " + cont_impar);
+		sc.close();
 	}
 }
